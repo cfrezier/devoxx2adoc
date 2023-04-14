@@ -27,6 +27,9 @@ do
     -H 'sec-ch-ua-platform: "macOS"' \
     --compressed > ${day}.json
 
-  node ./parse_fav.js ${day}
+  fav_ids=$(node ./parse_fav.js ${day})
 
+  ./favs2adoc.sh ${day} ${fav_ids}
+
+  rm -rf ${day}.json
 done
