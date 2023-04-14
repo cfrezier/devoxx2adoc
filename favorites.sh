@@ -1,7 +1,7 @@
 #!/bin/sh
 
 year=2023
-play_session=
+play_session=$1
 declare -a days=("wed" "thu" "fri")
 
 for day in "${days[@]}"
@@ -29,7 +29,7 @@ do
 
   fav_ids=$(node ./parse_fav.js ${day})
 
-  ./favs2adoc.sh ${day} ${fav_ids}
+  ./favs2adocs.sh ${day} ${fav_ids}
 
   rm -rf ${day}.json
 done
