@@ -4,6 +4,12 @@ Generate your pre-filled notes in adoc and just add your notes during presentati
 
 This script only generate the talks you marked as favorite in your planning : <https://cfp.devoxx.fr/2023/byday/wed>
 
+## Requirements
+
+```bash
+pip3 install -r requirements.txt --user
+```
+
 ## Usage
 
 Get the cookie value of `PLAY_SESSION` in the `https://cfp.devoxx.fr` domain.
