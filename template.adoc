@@ -1,0 +1,14 @@
+== $title
+
+> $type
+
+$speakers
+
+
+== Abstract
+
+$summary
+
+== Mes notes
+
+TODO
