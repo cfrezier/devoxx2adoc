@@ -4,6 +4,7 @@
 
 $speakers
 
+Lien : $link
 
 == Abstract
 

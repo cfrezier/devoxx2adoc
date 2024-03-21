@@ -1,9 +1,5 @@
-thu.json
-fri.json
-wed.json
 .idea
 *.iml
-wednesday
-thursday
-friday
 talks.json
+talks/*.adoc
+.vscode/
