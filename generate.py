@@ -30,7 +30,7 @@ def create_entry(id: str, title: str, type: str, summary: str, speakers):
     with open('template.adoc', 'r') as f:
         src = Template(f.read())
         result = src.substitute(d)
-        with open(f"{folder}/{sanitized_title}.adoc", "w+") as f:
+        with open(f"{folder}/{sanitized_title}.adoc", "w+", encoding="utf-8") as f:
             f.writelines(result)
 
 
