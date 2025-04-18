@@ -4,6 +4,7 @@ import os
 import re
 import unicodedata
 from string import Template
+from datetime import datetime
 
 import html2markdown
 import requests
@@ -11,7 +12,8 @@ import requests
 #####################
 # PARAMS
 lang = "fr-FR"
-api_url="https://devoxxfr2025.cfp.dev/api/public/talks"
+current_year = datetime.now().year
+api_url = f"https://devoxxfr{current_year}.cfp.dev/api/public/talks"
 #####################
 
 def create_entry(id: str, title: str, type: str, summary: str, speakers):
