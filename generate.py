@@ -11,7 +11,7 @@ import requests
 #####################
 # PARAMS
 lang = "fr-FR"
-api_url="https://devoxxfr2024.cfp.dev/api/public/talks"
+api_url="https://devoxxfr2025.cfp.dev/api/public/talks"
 #####################
 
 def create_entry(id: str, title: str, type: str, summary: str, speakers):
